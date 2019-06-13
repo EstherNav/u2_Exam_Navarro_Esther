@@ -1,6 +1,6 @@
 /*
  * File:          u2_Exam_Navarro_Esther.c
- * Date:
+ * Date:     
  * Description:
  * Author:
  * Modifications:
