@@ -52,7 +52,7 @@ Robot {
         RotationalMotor {
           name "motor_right"
           maxVelocity 52.35
-          maxTorque 1.15
+          maxTorque 0.59
         }
       ]
       endPoint DEF WHEEL1 Solid {
@@ -82,13 +82,10 @@ Robot {
         anchor -0.05 0 -0.06
       }
       device [
-        PositionSensor {
-          name "encoder2"
-        }
         RotationalMotor {
           name "motor_left"
           maxVelocity 52.3598
-          maxTorque 1.15
+          maxTorque 0.59
         }
       ]
       endPoint Solid {
@@ -147,9 +144,12 @@ Solid {
     Shape {
       appearance PBRAppearance {
       }
-      geometry Box {
+      geometry DEF G_BOX Box {
         size 0.1 0.2 0.2
       }
     }
   ]
+  boundingObject USE G_BOX
+  physics Physics {
+  }
 }
